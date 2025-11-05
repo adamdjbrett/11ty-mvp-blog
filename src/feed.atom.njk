@@ -1,0 +1,35 @@
+---
+permalink: feed.atom
+layout: null
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title }}</title>
+  <subtitle>{{ site.description }}</subtitle>
+  <link href="{{ (site.url or '') }}/" rel="alternate" />
+  <link href="{{ (site.url or '') }}/feed.atom" rel="self" />
+  <id>{{ (site.url or '') }}/</id>
+  {% if collections.posts and collections.posts.length %}
+  <updated>{{ collections.posts[0].date | date("yyyy-LL-dd'T'HH:mm:ss'Z'") }}</updated>
+  {% else %}
+  <updated>{{ "now" | date("yyyy-LL-dd'T'HH:mm:ss'Z'") }}</updated>
+  {% endif %}
+  <author>
+    <name>{{ site.author }}</name>
+  </author>
+
+  {% if collections.posts %}
+  {% for post in collections.posts %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ (site.url or '') }}{{ post.url }}" />
+    <id>{{ (site.url or '') }}{{ post.url }}</id>
+    <updated>{{ post.date | date("yyyy-LL-dd'T'HH:mm:ss'Z'") }}</updated>
+    <published>{{ post.date | date("yyyy-LL-dd'T'HH:mm:ss'Z'") }}</published>
+    <summary type="html">{{ (post.data.description or post.templateContent) | striptags | truncate(180) | escape }}</summary>
+    <content type="html">{{ post.templateContent | escape }}</content>
+  </entry>
+  {% endfor %}
+  {% endif %}
+</feed>

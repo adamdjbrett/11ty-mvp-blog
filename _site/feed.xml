@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>11ty MVP Blog</title>
+    <link>/</link>
+    <description>A minimal Eleventy blog using MVP.css for styling</description>
+  
+  <lastBuildDate>Wed, 05 Nov 2025 04:52:32 UTC</lastBuildDate>
+  
+
+  
+  
+    <item>
+      <title>Welcome to 11ty MVP Blog</title>
+      <link>/blog/2025-11-04-welcome-to-11ty-mvp-blog/</link>
+      <guid isPermaLink="true">/blog/2025-11-04-welcome-to-11ty-mvp-blog/</guid>
+      <pubDate>Wed, 05 Nov 2025 04:52:32 UTC</pubDate>
+      <description>The first post introducing the minimalist Eleventy MVP blog setup.</description>
+    </item>
+    
+    <item>
+      <title>A Julia de Burgos</title>
+      <link>/blog/poem/a-julia/</link>
+      <guid isPermaLink="true">/blog/poem/a-julia/</guid>
+      <pubDate>Sat, 28 Dec 2024 03:24:38 UTC</pubDate>
+      <description>Ya las gentes murmuran que yo soy tu enemiga porque dicen que en verso doy al mundo mi yo. Mienten, Julia de Burgos. Mienten, Julia de Burgos. La que se alza en mis versos no es tu...</description>
+    </item>
+    
+    <item>
+      <title>Delayed till she had ceased to know</title>
+      <link>/blog/poem/delayed/</link>
+      <guid isPermaLink="true">/blog/poem/delayed/</guid>
+      <pubDate>Fri, 27 Dec 2024 20:43:11 UTC</pubDate>
+      <description>DELAYED till she had ceased to know, Delayed till in its vest of snow Her loving bosom lay.{.indent-2} An hour behind the fleeting breath, Later by just an hour than death,— Oh,...</description>
+    </item>
+    
+    <item>
+      <title>Dreams</title>
+      <link>/blog/poem/dreams/</link>
+      <guid isPermaLink="true">/blog/poem/dreams/</guid>
+      <pubDate>Fri, 27 Dec 2024 20:43:11 UTC</pubDate>
+      <description>Hold fast to dreams For if dreams die Life is a broken-winged bird That cannot fly. Hold fast to dreams For when dreams go Life is a barren field Frozen with snow.</description>
+    </item>
+    
+    <item>
+      <title>O Captain! My Captain!</title>
+      <link>/blog/poem/o-captain/</link>
+      <guid isPermaLink="true">/blog/poem/o-captain/</guid>
+      <pubDate>Fri, 27 Dec 2024 20:43:11 UTC</pubDate>
+      <description>O Captain! my Captain! our fearful trip is done;[^fn1] The ship has weather’d every rack, the prize we sought is won, The port is near, the bells I hear, the people all exulting,...</description>
+    </item>
+    
+    <item>
+      <title>A Raisin in the Sun</title>
+      <link>/blog/drama/raisin/</link>
+      <guid isPermaLink="true">/blog/drama/raisin/</guid>
+      <pubDate>Fri, 27 Dec 2024 20:43:11 UTC</pubDate>
+      <description>(excerpt) MAMA: Son—how come you talk so much &#39;bout money? WALTER (with immense passion): Because it is life, Mama! MAMA: Oh—So now it’s life. Money is life. Once upon a time...</description>
+    </item>
+    
+    <item>
+      <title>Narrative of the Life of Frederick Douglass</title>
+      <link>/blog/narrative/</link>
+      <guid isPermaLink="true">/blog/narrative/</guid>
+      <pubDate>Fri, 27 Dec 2024 20:43:11 UTC</pubDate>
+      <description>PREFACE In the month of August, 1841, I attended an anti-slavery convention in Nantucket, at which it was my happiness to become acquainted with Frederick Douglass, the writer of...</description>
+    </item>
+    
+    <item>
+      <title>This is a fifth post (draft)</title>
+      <link>/blog/fifthpost/</link>
+      <guid isPermaLink="true">/blog/fifthpost/</guid>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 UTC</pubDate>
+      <description>This is a draft post</description>
+    </item>
+    
+    <item>
+      <title>This is my fourth post</title>
+      <link>/blog/fourthpost/</link>
+      <guid isPermaLink="true">/blog/fourthpost/</guid>
+      <pubDate>Sun, 30 Sep 2018 00:00:00 UTC</pubDate>
+      <description>This is a post on My Blog about touchpoints and circling wagons.</description>
+    </item>
+    
+    <item>
+      <title>This is my third post.</title>
+      <link>/blog/thirdpost/</link>
+      <guid isPermaLink="true">/blog/thirdpost/</guid>
+      <pubDate>Fri, 24 Aug 2018 00:00:00 UTC</pubDate>
+      <description>This is a post on My Blog about win-win survival strategies.</description>
+    </item>
+    
+    <item>
+      <title>This is my second post with a much longer title.</title>
+      <link>/blog/secondpost/</link>
+      <guid isPermaLink="true">/blog/secondpost/</guid>
+      <pubDate>Wed, 04 Jul 2018 00:00:00 UTC</pubDate>
+      <description>This is a post on My Blog about leveraging agile frameworks.</description>
+    </item>
+    
+    <item>
+      <title>This is my first post.</title>
+      <link>/blog/firstpost/</link>
+      <guid isPermaLink="true">/blog/firstpost/</guid>
+      <pubDate>Tue, 01 May 2018 00:00:00 UTC</pubDate>
+      <description>This is a post on My Blog about agile frameworks.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

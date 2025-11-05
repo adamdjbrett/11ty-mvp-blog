@@ -1,0 +1,28 @@
+---
+permalink: feed.xml
+layout: null
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>{{ site.title }}</title>
+    <link>{{ (site.url or "") }}/</link>
+    <description>{{ site.description }}</description>
+  {% if collections.posts and collections.posts.length %}
+  <lastBuildDate>{{ collections.posts[0].date | date("ccc, dd LLL yyyy HH:mm:ss 'UTC'") }}</lastBuildDate>
+  {% endif %}
+
+  {% if collections.posts %}
+  {% for post in collections.posts %}
+    <item>
+      <title>{{ post.data.title }}</title>
+      <link>{{ (site.url or "") }}{{ post.url }}</link>
+      <guid isPermaLink="true">{{ (site.url or "") }}{{ post.url }}</guid>
+      <pubDate>{{ post.date | date("ccc, dd LLL yyyy HH:mm:ss 'UTC'") }}</pubDate>
+      <description>{{ (post.data.description or post.templateContent) | striptags | truncate(180) }}</description>
+    </item>
+    {% endfor %}
+    {% endif %}
+  </channel>
+</rss>

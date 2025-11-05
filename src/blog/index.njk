@@ -1,0 +1,32 @@
+---
+layout: blog
+title: Blog
+pagination:
+  data: collections.posts
+  size: 5
+  alias: posts
+permalink: "/blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+---
+
+<h2>Blog Posts</h2>
+{% for post in posts %}
+<section id="section-1 aside">
+<article>
+  <aside>
+  <header>
+    <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+  </header>
+  <p>{{ post.data.description or post.templateContent | striptags | truncate(160) }}</p>
+  <p><a href="{{ post.url }}"><b>Read more →</b></a></p>
+</aside>
+</article>
+</section>
+{% endfor %}
+
+{% if pagination.pages.length > 1 %}
+<nav>
+  {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">← Newer</a>{% endif %}
+  Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}
+  {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Older →</a>{% endif %}
+</nav>
+{% endif %}
